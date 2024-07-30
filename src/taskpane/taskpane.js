@@ -11,7 +11,7 @@ Office.onReady((info) => {
     document.getElementById("app-body").style.display = "flex";
     // document.getElementById("run").onclick = run;
     document.getElementById("placeholder_feature_button").onclick = () => {
-      window.location.href = "feature_placeholder/feature_placeholder.html";
+      window.location.href = "https://techdevalex.github.io/Excel_Addin_Hosting/src/taskpane/feature_placeholder/feature_placeholder.html";
 
     }
   }

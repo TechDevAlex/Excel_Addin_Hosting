@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kreis Trade Export Tool</title>
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <style>
+      .block {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Kreis TRADE Export</h1>
+    <button id="backButton">Back to Main</button>
+
+    <div>
+      <p></p>
+    </div>
+
+    <div>
+      <label for="monthSelect">Select Month:</label>
+      <select id="monthSelect"></select>
+    </div>
+
+    <div class="block">
+      <div>
+        <label for="employeeSelect">Select Employee:</label>
+        <select id="employeeSelect"></select>
+      </div>
+
+      <div>
+        <label for="columnESelect">Select Column E Entry:</label>
+        <select id="columnESelect"></select>
+        <button id="addEntryButton">Add</button>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Formula</h2>
+      <div>
+        <label for="formulaInput">Enter Formula:</label>
+        <textarea type="text" id="formulaInput">Enter Formula</textarea>
+        <button id="addFormulaButton">Add Formula</button>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Entries</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Column E Entry</th>
+            <th>Formula</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="entriesTableBody">
+        </tbody>
+      </table>
+    </div>
+    
+
+    <script src="feature_placeholder.js"></script>
+    <script>
+      document.getElementById("backButton").onclick = () => {
+        window.location.href = "../taskpane.html";
+      };
+    </script>
+  </body>
+</html>
